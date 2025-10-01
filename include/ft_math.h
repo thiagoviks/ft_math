@@ -5,6 +5,8 @@
 #define TWO_PI (2.0 * M_PI)
 #define HALF_PI  (0.5 * M_PI)
 
+double		ft_normalize(double x);
+
 double      ft_acos(double);
 float       ft_acosf(float);
 long double ft_acosl(long double);
