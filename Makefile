@@ -11,7 +11,7 @@ OBJ = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
 
 CC = clang
 CFLAGS = -Wall -Wextra -Werror -fPIC -I$(INCLUDE_DIR)
-#LDFLAGS = -L. -L/usr/local/lib -lft_maki   # <-- adicionei aqui
+LDFLAGS = -L. -L/usr/local/lib -lft_maki   # <-- adicionei aqui
 
 .PHONY: all clean fclean re test install
 
@@ -27,8 +27,7 @@ lib$(NAME).a: $(OBJ)
 	ar rcs $@ $^
 
 lib$(NAME).so: $(OBJ)
-	$(CC) -shared -Wl,-z,defs
-#$(CC) -shared -Wl,-z,defs -o $@ $^ $(LDFLAGS)
+	$(CC) -shared -Wl,-z,defs -o $@ $^ $(LDFLAGS)
 
 clean:
 	rm -rf $(OBJ_DIR)
