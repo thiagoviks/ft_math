@@ -1,9 +1,30 @@
 #ifndef  FT_MATH_H
 #define FT_MATH_H
 
-#define M_PI 3.14159265358979323846
-#define TWO_PI (2.0 * M_PI)
-#define HALF_PI  (0.5 * M_PI)
+#define	FT_DBL_MIN		2.2250738585072014e-308
+#define FT_DBL_MAX		1.7976931348623157e+308
+#define FT_DBL_EPSILON	2.2204460492503131e-16
+#define FT_DBL_TRUE_MIN 4.9406564584124654e-324
+
+#define FT_M_PI			3.14159265358979323846
+#define FT_TWO_PI		(FT_M_PI * 2.0)
+#define FT_HALF_PI		(FT_M_PI / 2.0)
+#define FT_EPSILON    	(1e-15)
+#define FT_NAN			(0.0/0.0)
+
+#define TAN_PI_8  0.41421356237309504880  /* tan(pi/8) = sqrt(2)-1 */
+#define TAN_3PI_8 2.41421356237309504880  /* tan(3pi/8) = sqrt(2)+1 */
+
+/*
+O epsilon “real” do double é ≈ 2.22e-16.
+
+O 1e-15 sugerido é um pouco mais relaxado,
+ porque:
+
+os termos da série (term) vão acumulando erro de arredondamento,
+e como não está sendo usado long double, não adianta forçar além 
+de ~15–16 casas decimais úteis.
+*/
 
 double		ft_normalize(double x);
 
