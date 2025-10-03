@@ -9,8 +9,11 @@
 #define FT_M_PI			3.14159265358979323846
 #define FT_TWO_PI		(FT_M_PI * 2.0)
 #define FT_HALF_PI		(FT_M_PI / 2.0)
+#define	FT_TOLERANCE	(1e-12)
 #define FT_EPSILON    	(1e-15)
 #define FT_NAN			(0.0/0.0)
+#define FT_INFINITY (1.0/0.0)
+#define FT_NEG_INFINITY (-1.0/0.0)
 
 #define TAN_PI_8  0.41421356237309504880  /* tan(pi/8) = sqrt(2)-1 */
 #define TAN_3PI_8 2.41421356237309504880  /* tan(3pi/8) = sqrt(2)+1 */
