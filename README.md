@@ -260,4 +260,7 @@ MIT
 
 ---
 
+## Author
+**Maki** - Inspired by Python Pandas, built from scratch in C.
+
 **Note**: This is an educational implementation. For production use, prefer the standard `<math.h>` library which uses hardware-optimized implementations.
