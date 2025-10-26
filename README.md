@@ -241,6 +241,14 @@ Include the header in your project:
 
 This library is standalone and does not depend on `<math.h>`.
 
+**Platform requirement**: Linux only
+
+This library requires the ft_maki project and is designed for Linux systems.
+```bash
+# Make sure you're on Linux
+clang your_program.c -o your_program  -lft_maki -lft_math
+```
+
 ## Use Cases
 
 Perfect for:
